@@ -11,7 +11,18 @@
 #include <ctype.h>
 #include <arpa/inet.h>
 #include <pthread.h>
+#include "BlockingQueue.h"
 
-#define NUM_HANDLE_CLIENT_ACTORS 2
-#define NUM_LOG_ACTORS 1
-#define PORT1 12340
+void* handle_client_actor(void *arg);
+
+struct client_actor_package{
+	BlockingQueue* handle_client_actor_q;
+	BlockingQueue* log_actor_q;
+};
+
+struct connection_data{
+	int fd;
+	struct sockaddr_in addr;
+	unsigned int addr_len;
+};
+

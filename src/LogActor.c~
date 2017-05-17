@@ -11,11 +11,11 @@ void* handle_log_actor(void *arg){
 	//file descriptors for sockets objects
   	
 	//File stuff
-	FILE *logFile;
+	//FILE *logFile;
 		
 	//Logging Stuff
+	//char log_buffer[8192];
 	char* log_ptr;
-	int log_len;
 	
 	ActorQueues* Q = arg;
 	
@@ -27,17 +27,7 @@ void* handle_log_actor(void *arg){
 		}
 	
 		printf("Logging: ");
-		
-		log_len = strlen(log_ptr);
-		
-		logFile = fopen(log_file, "a");
-		
-		fprintf(logFile, "%s\n", log_ptr);
-
-		fclose(logFile);
-		
 		printf("%s\n", log_ptr);
-		bzero(log_ptr, log_len);
 		free(log_ptr);
 	}
 	printf("Logging Thread Done!\n");

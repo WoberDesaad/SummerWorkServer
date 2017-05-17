@@ -11,14 +11,11 @@
 #include <ctype.h>
 #include <arpa/inet.h>
 #include <pthread.h>
+
+#include "Actors.h"
 #include "BlockingQueue.h"
 
 void* handle_client_actor(void *arg);
-
-struct client_actor_package{
-	BlockingQueue* handle_client_actor_q;
-	BlockingQueue* log_actor_q;
-};
 
 struct connection_data{
 	int fd;

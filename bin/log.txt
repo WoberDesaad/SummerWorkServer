@@ -1,0 +1,24 @@
+Client <10.28.3.95> Connected at 11:25:50, Wednesday, May 17 2017.....GET </pages/basic.html>...File Found...Client Closed
+
+Client <10.28.3.95> Connected at 11:26:55, Wednesday, May 17 2017.....GET </pages/basic.html>...File Found...Client Closed
+
+Client <10.28.3.95> Connected at 11:26:56, Wednesday, May 17 2017.....GET </pages/basic.html>...File Found...Client Closed
+
+Client <10.28.3.95> Connected at 11:26:56, Wednesday, May 17 2017.....GET </pages/basic.html>...File Found...Client Closed
+
+Client <10.28.3.95> Connected at 11:26:56, Wednesday, May 17 2017.....GET </pages/basic.html>...File Found...Client Closed
+
+Client <10.28.3.95> Connected at 11:26:59, Wednesday, May 17 2017.....GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <10.28.3.95> Connected at 11:26:59, Wednesday, May 17 2017.....GET </pages/basic.html>...File Found...Client Closed
+
+Client <10.28.3.95> Connected at 11:29:50, Wednesday, May 17 2017.....GET </pages/issues.html>...File Found...Client Closed
+
+Client <10.28.3.95> Connected at 11:29:52, Wednesday, May 17 2017.....GET </pages/basic.html>...File Found...Client Closed
+
+Client <10.28.3.95> Connected at 11:29:53, Wednesday, May 17 2017.....GET </pages/help.html>...File Found...Client Closed
+
+Client <10.28.3.95> Connected at 11:29:53, Wednesday, May 17 2017.....GET </pages/basic.html>...File Found...Client Closed
+
+Client <10.28.3.95> Connected at 11:29:54, Wednesday, May 17 2017.....GET </pages/about.html>...File Found...Client Closed
+
