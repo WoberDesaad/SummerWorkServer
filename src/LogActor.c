@@ -19,6 +19,15 @@ void* handle_log_actor(void *arg){
 	
 	ActorQueues* Q = arg;
 	
+	time_t t = time(NULL);
+	char* str_time = ctime(&t);
+	
+	logFile = fopen(log_file, "a");
+	
+	fprintf(logFile, "Starting logging...%s", str_time);
+	
+	fclose(logFile);
+	
 	while(1){
 		log_ptr = BlockingQueue_remove(Q->log_q);
 		if(log_ptr[0] == 'Q' && log_ptr[1] == 'U' && log_ptr[2] == 'I' && log_ptr[3] == 'T')
@@ -41,6 +50,7 @@ void* handle_log_actor(void *arg){
 		free(log_ptr);
 	}
 	printf("Logging Thread Done!\n");
+	
 	return NULL;
 }
 
