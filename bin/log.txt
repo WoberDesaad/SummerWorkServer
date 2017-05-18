@@ -1,1 +1,1278 @@
 Starting logging...Wed May 17 12:56:14 2017
+Starting logging...Thu May 18 08:00:17 2017
+Client <127.0.0.1> Connected at 08:00:26, Thursday, May 18 2017.....GET </>...Redirected To <pages/index.php>...Client Closed
+
+Client <127.0.0.1> Connected at 08:00:26, Thursday, May 18 2017.....GET </pages/index.php>...File Found...Client Closed
+±
+Starting logging...Thu May 18 08:02:48 2017
+Client <127.0.0.1> Connected at 08:02:55, Thursday, May 18 2017.....GET </>...Redirected To <pages/index.php>...Client Closed
+
+Client <127.0.0.1> Connected at 08:02:55, Thursday, May 18 2017.....GET </favicon.ico>...File Found...Client Closed
+
+Client <127.0.0.1> Connected at 08:02:55, Thursday, May 18 2017.....GET </pages/index.php>...File Found...Client Closed
+±
+Starting logging...Thu May 18 08:11:08 2017
+Client <127.0.0.1> Connected at 08:11:16, Thursday, May 18 2017.....GET </>...Redirected To <pages/index.php>...Client Closed
+
+Client <127.0.0.1> Connected at 08:11:16, Thursday, May 18 2017.....GET </pages/index.php>...File Found...Client Closed
+±
+Starting logging...Thu May 18 08:23:22 2017
+Client <127.0.0.1> Connected at 08:23:29, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:29, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:30, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:30, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:30, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:30, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:30, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:30, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:30, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:30, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:30, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:30, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:30, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:30, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:30, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:30, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:31, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:31, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:31, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:31, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:31, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:31, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:31, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:31, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:31, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:31, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:31, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:31, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:31, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:32, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:32, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:32, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:32, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:32, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:32, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:32, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:32, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:32, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:32, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:32, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:32, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:32, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:32, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:32, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:32, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:33, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:33, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:33, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:33, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:33, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:33, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:33, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:33, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:33, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:33, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:33, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:33, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:33, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:33, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:33, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:33, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:33, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:33, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:34, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:34, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:34, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:34, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:34, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:34, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:34, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:34, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:34, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:34, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:34, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:34, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:34, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:34, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:34, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:34, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:35, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:35, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:35, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:35, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:35, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:35, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:35, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:35, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:35, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:35, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:35, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:35, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:35, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:35, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:35, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:35, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:35, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:35, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:36, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:36, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:36, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:36, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:36, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:36, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:36, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:36, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:36, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:36, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:36, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:36, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:36, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:36, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:36, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:36, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:36, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:36, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:37, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:37, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:37, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:37, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:37, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:37, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:37, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:37, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:37, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:37, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:37, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:37, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:37, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:37, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:37, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:37, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:37, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:37, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:38, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:38, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:38, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:38, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:38, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:38, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:38, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:38, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:38, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:38, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:38, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:38, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:38, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:38, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:38, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:38, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:38, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:38, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:38, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:39, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:39, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:39, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:39, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:39, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:39, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:39, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:39, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:39, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:39, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:39, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:39, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:39, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:39, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:39, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:39, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:39, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:40, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:40, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:40, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:40, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:40, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:40, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:40, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:40, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:40, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:40, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:40, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:40, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:40, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:40, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:40, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:40, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:40, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:40, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:41, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:41, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:41, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:41, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:41, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:41, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:41, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:41, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:41, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:41, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:41, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:41, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:41, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:41, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:41, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:41, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:42, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:42, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:42, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:42, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:42, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:42, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:42, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:42, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:42, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:42, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:42, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:42, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:42, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:42, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:42, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:42, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:42, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:42, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:42, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:43, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:43, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:43, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:43, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:43, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:43, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:43, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:43, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:43, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:43, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:43, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:43, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:43, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:43, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:43, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:43, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:43, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:44, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:44, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:44, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:44, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:44, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:44, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:44, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:44, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:44, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:44, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:44, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:44, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:44, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:44, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:44, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:44, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:44, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:45, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:45, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:45, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:45, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:45, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:45, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:45, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:45, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:45, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:45, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:45, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:45, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:45, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:45, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:45, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:45, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:45, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:45, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:45, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:46, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:46, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:46, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:46, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:46, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:46, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:46, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:46, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:46, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:46, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:46, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:46, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:46, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:46, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:46, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:46, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:46, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:47, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:47, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:47, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:47, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:47, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:47, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:47, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:47, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:47, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:47, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:47, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:47, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:47, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:47, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:47, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:47, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:47, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:48, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:48, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:48, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:48, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:48, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:48, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:48, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:48, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:48, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:48, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:48, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:48, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:48, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:48, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:48, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:48, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:48, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:48, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:48, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:49, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:49, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:49, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:49, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:49, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:49, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:49, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:49, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:49, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:49, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:49, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:49, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:49, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:49, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:49, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:49, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:49, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:49, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:50, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:50, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:50, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:50, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:50, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:50, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:50, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:50, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:50, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:50, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:50, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:50, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:50, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:50, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:50, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:50, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:50, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:51, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:51, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:51, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:51, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:51, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:51, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:51, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:51, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:51, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:51, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:51, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:51, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:51, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:51, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:51, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:51, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:51, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:51, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:52, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:52, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:52, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:52, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:52, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:52, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:52, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:52, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:52, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:52, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:52, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:52, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:52, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:52, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:52, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:53, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:53, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:53, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:53, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:53, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:53, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:53, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:53, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:53, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:53, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:53, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:53, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:53, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:53, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:53, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:54, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:54, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:54, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:54, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:54, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:54, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:54, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:54, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:23:54, Thursday, May 18 2017...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Starting logging...Thu May 18 08:25:25 2017
+Client <127.0.0.1> Connected at 08:26:08, Thursday, May 18 2017.....GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:26:08, Thursday, May 18 2017.....GET </pages/basic.html>...File Found...Client Closed
+
+Client <127.0.0.1> Connected at 08:26:10, Thursday, May 18 2017.....GET </pages/about.html>...File Found...Client Closed
+
+Client <127.0.0.1> Connected at 08:26:11, Thursday, May 18 2017.....GET </pages/basic.html>...File Found...Client Closed
+
+Client <127.0.0.1> Connected at 08:26:30, Thursday, May 18 2017.....GET </favicon.ico>...File Found...Client Closed
+
+Client <127.0.0.1> Connected at 08:28:30, Thursday, May 18 2017.....GET </favicon.ico>...File Found...Client Closed
+
+Client <127.0.0.1> Connected at 08:32:49, Thursday, May 18 2017.....GET </pages/basic.html>...File Found...Client Closed
+
+Client <127.0.0.1> Connected at 08:33:09, Thursday, May 18 2017.....GET </pages/basic.html>...File Found...Client Closed
+
+Client <127.0.0.1> Connected at 08:33:38, Thursday, May 18 2017.....GET </pages/basic.html>...File Found...Client Closed
+
+Client <127.0.0.1> Connected at 08:33:38, Thursday, May 18 2017.....GET </pages/pages/style.css>...File Not Found...Client Closed
+­û
+Client <127.0.0.1> Connected at 08:33:39, Thursday, May 18 2017.....GET </pages/basic.html>...File Found...Client Closed
+
+Client <127.0.0.1> Connected at 08:33:39, Thursday, May 18 2017.....GET </pages/pages/style.css>...File Not Found...Client Closed
+
+Client <127.0.0.1> Connected at 08:33:40, Thursday, May 18 2017.....GET </pages/basic.html>...File Found...Client Closed
+
+Client <127.0.0.1> Connected at 08:33:40, Thursday, May 18 2017.....GET </pages/pages/style.css>...File Not Found...Client Closed
+
+Client <127.0.0.1> Connected at 08:34:24, Thursday, May 18 2017.....GET </pages/basic.html>...File Found...Client Closed
+
+Client <127.0.0.1> Connected at 08:34:24, Thursday, May 18 2017.....GET </pages/style.css>...File Found...Client Closed
+±
+Starting logging...Thu May 18 08:36:06 2017
+Client <127.0.0.1> Connected at 08:36:14, Thursday, May 18 2017.....GET </>...Redirected To <pages/basic.html>...Client Closed
+
+Client <127.0.0.1> Connected at 08:36:14, Thursday, May 18 2017.....GET </pages/basic.html>...File Found...Client Closed
+
+Client <127.0.0.1> Connected at 08:36:14, Thursday, May 18 2017.....GET </pages/style.css>...File Found...Client Closed
+±
+Starting logging...Thu May 18 08:37:37 2017
+Client <127.0.0.1> Connected at 08:37:40, Thursday, May 18 2017.....GET </pages/basic.html>...File Found...Client Closed
+
+Client <127.0.0.1> Connected at 08:37:40, Thursday, May 18 2017.....GET </pages/style.css>...File Found...Client Closed
+±
+Starting logging...08:58:07, Thursday, May 18 201708:58:19, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </>...Redirected To <pages/basic.html>...Client Closed
+
+08:58:19, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </favicon.ico>...File Found...Client Closed
+
+08:58:19, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found...Client Closed
+
+08:58:19, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found...Client Closed
+ñ
+Starting logging...09:02:40, Thursday, May 18 201709:02:43, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:02:44, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:01, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/issues.html>...File Found..Sent...Client Closed
+p
+09:03:02, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:02, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:04, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Not Found...Client Closed
+
+09:03:09, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/help.html>...File Found..Sent...Client Closed
+
+09:03:10, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:10, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:11, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/about.html>...File Found..Sent...Client Closed
+
+09:03:13, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:13, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:14, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/issues.html>...File Found..Sent...Client Closed
+p
+09:03:15, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:15, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:17, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:17, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:17, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:17, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:18, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:18, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:18, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:18, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:18, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:18, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:19, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:19, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:19, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:19, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:19, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:19, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:19, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:19, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:19, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:19, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:19, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:19, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:20, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:20, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:20, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:20, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:20, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:20, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:20, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:20, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:20, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:20, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:20, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:21, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:21, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:21, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:21, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:21, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:21, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:21, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:21, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:21, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:21, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:21, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:22, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:22, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:22, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:22, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:22, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:22, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:22, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:22, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:22, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:22, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:22, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:22, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:23, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:23, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:23, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:23, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:23, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:23, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:23, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:23, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:23, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:23, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:23, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:23, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:24, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:24, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:24, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:24, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:24, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:24, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:24, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:24, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:24, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:24, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:24, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:24, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:25, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:25, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:25, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:25, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:25, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:25, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:25, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:25, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:25, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:25, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:26, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:26, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:26, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:26, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:26, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:26, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:27, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:27, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:27, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:27, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:27, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:27, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:27, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:27, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:27, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:27, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:27, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:27, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:27, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:28, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:28, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:28, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:03:33, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Not Found...Client Closed
+
+09:03:39, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/help.html>...File Found..Sent...Client Closed
+
+09:03:42, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:03:42, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:05:22, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </log.txt>...File Found..Sent...Client Closed
+
+09:05:45, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:05:45, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:05:50, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/issues.html>...File Found..Sent...Client Closed
+p
+09:05:50, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:05:51, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:05:51, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:05:51, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+09:05:51, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:05:52, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:05:52, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:05:53, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+09:05:53, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:05:59, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </favicon.ico>...File Found..Sent...Client Closed
+
+09:07:15, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+09:07:15, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:07:30, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+09:07:30, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:07:51, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+09:07:51, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:08:41, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:08:41, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:08:42, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/issues.html>...File Found..Sent...Client Closed
+p
+09:08:43, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:08:45, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:08:45, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:08:46, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/about.html>...File Found..Sent...Client Closed
+
+09:08:46, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:08:47, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:08:47, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:08:48, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+09:08:48, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:09:40, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+09:09:40, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:10:49, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+09:10:49, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:11:33, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+09:11:33, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:12:20, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+09:12:21, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:12:22, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:12:22, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:12:23, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+09:12:23, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:12:59, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+09:12:59, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:13:18, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+09:13:18, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:14:01, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/basic.html>...File Found..Sent...Client Closed
+
+09:14:01, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+09:14:04, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/about.html>...File Found..Sent...Client Closed
+
+09:14:04, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+

@@ -24,10 +24,6 @@ int main()
  	char r, c;
  	fd_set fds;
  	void* connptr;
-
- 	char log_buffer[1024];
- 	char* log_ptr;
- 	int log_len;
  	
 	//actor package
 	ActorQueues Q;

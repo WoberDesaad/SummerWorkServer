@@ -9,6 +9,11 @@
 			text-align: center;
 			font-size: 60px;
 		}
+		h2 {
+			color: purple;
+			font-size: 30px;
+		}
+		
 		p {
 			font-family: verdana;
 			font-size: 20px;
@@ -19,6 +24,15 @@
 			Crimson
 		</h1>
 		<div><a class="b1" href="./basic.html">Main</a></div>
+		<h2>
+			What IT's About?
+		</h2>
+		<p1>
+			This Server will act as a platform to facilitate communication and 
+			efficiency within the summer IT Crew. There are intended to be utilities
+			to assist in tracking inventory and locating items within the server room,
+			and to log questions and answers for easier troubleshooting.	
+		</p1>
 	</body>
 </html>
 

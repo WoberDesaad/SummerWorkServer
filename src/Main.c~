@@ -2,7 +2,9 @@
 //Class: ETEC3201 Networking and Communications
 //Program: Final Exam question 14
 //Time Server
+#include "Actors.h"
 #include "HandleClientActor.h"
+#include "LogActor.h"
 #include "BlockingQueue.h"
 #include "Main.h"
 
@@ -23,30 +25,37 @@ int main()
  	fd_set fds;
  	void* connptr;
 
-	struct client_actor_package cap;
+ 	char log_buffer[1024];
+ 	char* log_ptr;
+ 	int log_len;
+ 	
+	//actor package
+	ActorQueues Q;
 
-	//thread_stuff
-	pthread_t thread[NUMTHREADS];
-	BlockingQueue* Q = BlockingQueue_create();
-	BlockingQueue* LOG = BlockingQueue_create();
-
-	cap.handle_client_actor_q = Q;
-	cap.log_actor_q = LOG;
-
+	//threads
+	pthread_t handle_client_threads[NUM_HANDLE_CLIENT_ACTORS];
+	pthread_t log_threads[NUM_LOG_ACTORS];
+	
+	Q.handle_client_q = BlockingQueue_create();
+	Q.log_q = BlockingQueue_create();
 
 	//initialize addr to zero
 	memset(&rem_addr, '\0', sizeof(struct sockaddr));
 
 	//Create Threads
-	for(i = 0; i < NUMTHREADS; i++){
-		pthread_create(&thread[i], NULL, handle_client_actor, (void*)&cap);
+	for(i = 0; i < NUM_HANDLE_CLIENT_ACTORS; i++){
+		pthread_create(&handle_client_threads[i], NULL, handle_client_actor, (void*)&Q);
+	}
+	
+	for(i = 0; i < NUM_LOG_ACTORS; i++){
+		pthread_create(&log_threads[i], NULL, handle_log_actor, (void*)&Q);
 	}
 	
 	//Create Socket
  	sockfd = socket(AF_INET, SOCK_STREAM, 0);
  	if(sockfd < 0){
- 	   	printf("%s\n", strerror(errno));
-		return -1;
+ 		printf("%s\n", strerror(errno));
+  		return -1;
  	}
   	printf("Socket Opened....");
  	
@@ -60,16 +69,16 @@ int main()
   	//Binding Sockets
 	err = bind(sockfd, (struct sockaddr*)&addr1, sizeof(struct sockaddr));
   	if(err < 0){
-    		printf("%s\n", strerror(errno));
-		return -1;
+ 		printf("%s\n", strerror(errno));
+  		return -1;
   	}
   	printf("Socket Bound\n");
   
   	//Listening
  	err = listen(sockfd,10);
   	if(err < 0){
-    		printf("%s\n", strerror(errno));
-		return -1;
+ 		printf("%s\n", strerror(errno));
+  		return -1;
  	}
   	printf("Listening on port %d...\n\n", PORT1);
   
@@ -86,8 +95,13 @@ int main()
   		if(selectfd < 0){
   			//Error
   			printf("Error Selecting: %s\n", strerror(errno));
-			BlockingQueue_add(Q, quit);
+			for(i = 0; i < NUM_HANDLE_CLIENT_ACTORS; i++){
+				BlockingQueue_add(Q.handle_client_q, quit);
+			}
 			
+			for(i = 0; i < NUM_LOG_ACTORS; i++){
+				BlockingQueue_add(Q.log_q, quit);
+			}
 			break;	
   		}else{
   			if(FD_ISSET(0, &fds)){
@@ -109,8 +123,13 @@ int main()
   				}
   				if(c ==  -1){
   					printf("Quit Command Received!\n");
-					for(i = 0; i < NUMTHREADS; i++){
-  						BlockingQueue_add(Q, quit);
+  					
+					for(i = 0; i < NUM_HANDLE_CLIENT_ACTORS; i++){
+  						BlockingQueue_add(Q.handle_client_q, quit);
+					}
+					
+					for(i = 0; i < NUM_LOG_ACTORS; i++){
+  						BlockingQueue_add(Q.log_q, quit);
 					}
   					break;
 				}
@@ -120,28 +139,32 @@ int main()
   				remfd = accept(sockfd, (struct sockaddr*)&rem_addr, &rem_addr_len);
 				if(remfd < 0){
 					printf("Error accepting socket: %s\n", strerror(errno));
-					return -1;
+					continue;
 				}else{
 					connptr = malloc(sizeof(struct connection_data));
 					((struct connection_data*)connptr)->fd = remfd;
 					((struct connection_data*)connptr)->addr = rem_addr;
 					((struct connection_data*)connptr)->addr_len = rem_addr_len;
-					BlockingQueue_add(Q, connptr);
+					BlockingQueue_add(Q.handle_client_q, connptr);
 				}
   			}
   		}
   	}
  
-  	
-	for(i = 0; i < NUMTHREADS; i++){
-		pthread_join(thread[i], NULL);
+	for(i = 0; i < NUM_HANDLE_CLIENT_ACTORS; i++){
+		pthread_join(handle_client_threads[i], NULL);
 	}
+	
+	for(i = 0; i < NUM_LOG_ACTORS; i++){
+		pthread_join(log_threads[i], NULL);
+	}
+	
 	printf("\nAll Threads Terminated...");
   	
 	printf("Shutting Down Server...\n"); 	
 	err = shutdown(sockfd, 2);
 	if(err < 0){
-    		printf("%s\n", strerror(errno));
+    	printf("%s\n", strerror(errno));
 	}
 	
 	printf("Done.\n");

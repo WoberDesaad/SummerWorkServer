@@ -14,10 +14,7 @@ void* handle_client_actor(void *arg){
 	char mess_buff[8192];
 	char str_buff[256];
 	char rec_buff[8192];
-	char time_buff[256];
  	int mess_len = 0;
-	time_t ttime;
-	struct tm * tmtime;
 
 
 	//Random Stuff
@@ -52,12 +49,7 @@ void* handle_client_actor(void *arg){
 
 		remfd = client->fd;
 
-		ttime = time(NULL);
-		tmtime = localtime(&ttime);
-
-		strftime(time_buff, 256, "%T, %A, %B %d %Y", tmtime);
-
-		sprintf(log_buffer, "Client <%s> Connected at %s.....", inet_ntoa(client->addr.sin_addr), time_buff);
+		sprintf(log_buffer, "HCA: Client <%s> Connected...", inet_ntoa(client->addr.sin_addr));
 
 		mess_len = recv(remfd, rec_buff, 8192, 0);
 
@@ -107,7 +99,7 @@ void* handle_client_actor(void *arg){
 					}	
 				}else{
 					sprintf(mess_buff, "HTTP/1.0 200 OK\r\n\r\n");
-					sprintf(log_buffer, "%sFile Found...", log_buffer);
+					sprintf(log_buffer, "%sFile Found..", log_buffer);
 					
 					err = send(remfd, mess_buff, strlen((char*)mess_buff), 0);
 					if(err < 0){
@@ -131,6 +123,8 @@ void* handle_client_actor(void *arg){
 						}while(numread > 0);
 					}
 					fclose(sendFile);
+					
+					sprintf(log_buffer, "%sSent...", log_buffer);
 				}
 				bzero(&str_buff, 256);
 			}
