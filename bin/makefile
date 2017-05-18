@@ -20,7 +20,7 @@ LFLAGS =
 LIBS = -lpthread
 
 # define the C source files
-SRCS = Main.c HandleClientActor.c BlockingQueue.c LogActor.c
+SRCS = Main.c HandleClientActor.c BlockingQueue.c LogActor.c http_parser.c
 
 #path
 VPATH = ../src/
@@ -48,5 +48,5 @@ clean:
 
 depend: $(SRCS)
 	makedepend $(INCLUDES) $^
-
+	
 # DO NOT DELETE THIS LINE -- make depend needs it

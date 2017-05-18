@@ -4,6 +4,8 @@
 
 extern char* quit;
 
+char* chat_file = "chat.txt";
+
 void* handle_client_actor(void *arg){
 	//Local Variables	
 	//file descriptors for sockets objects
@@ -13,6 +15,7 @@ void* handle_client_actor(void *arg){
   	//I/O Message Stuff
 	char mess_buff[8192];
 	char str_buff[256];
+	char submit_buff[1024];
 	char rec_buff[8192];
  	int mess_len = 0;
 
@@ -25,6 +28,7 @@ void* handle_client_actor(void *arg){
 	
 	//File stuff
 	FILE *sendFile;
+	FILE *chatFile;
 		
 	//Logging Stuff
 	char log_buffer[1024];
@@ -129,7 +133,47 @@ void* handle_client_actor(void *arg){
 				bzero(&str_buff, 256);
 			}
 		}else if(rec_buff[0] == 'P' && rec_buff[1] == 'O' && rec_buff[2] == 'S' && rec_buff[3] == 'T'){
-			printf("Client Post!\n");
+			c = 0;
+			while(c < mess_len - 4 && !( rec_buff[c] == '\r' && rec_buff[c+1] == '\n' && rec_buff[c+2] == '\r' && rec_buff[c+3] == '\n')){
+				c++;
+			}
+			while(rec_buff[c] != '='){
+				c++;
+			}
+			
+			cptr_start = &rec_buff[c+1];
+			c = 0;
+			while(cptr_start[c] != '&'){
+				if(cptr_start[c] == '+'){
+					submit_buff[c] = ' ';
+				}else{
+					submit_buff[c] = cptr_start[c];
+				}
+				c++;
+			}
+			submit_buff[c] = '\0';
+			
+			chatFile = fopen(chat_file, "a");
+			
+			fprintf(chatFile, "Client Said: %s\n", submit_buff);
+			
+			if(!chatFile){
+				printf("Error Opening File!\n");
+				continue;
+			}
+			
+			fclose(chatFile);
+			
+			sprintf(mess_buff, "HTTP/1.0 200 OK\r\n\r\n<html><meta http-equiv =\"refresh\" content=\"0; url=/pages/chat.html\"/></html>\r\n");
+			err = send(remfd, mess_buff, strlen((char*)mess_buff), 0);
+			if(err < 0){
+				sprintf(log_buffer, "%s%s\n", log_buffer, strerror(errno));
+				free(conn_ptr);
+				continue;
+			}
+			sprintf(log_buffer, "%sRefreshing <chat.html>...", log_buffer);
+			
+			
 		}else{
 			printf("Unknown\n");
 		}		
@@ -137,7 +181,7 @@ void* handle_client_actor(void *arg){
 		bzero(&rec_buff, 8192);
 		close(remfd);
 
-		sprintf(log_buffer, "%sClient Closed\n", log_buffer);
+		sprintf(log_buffer, "%sClient Closed\n\0", log_buffer);
 		log_len = strlen(log_buffer);
 		log_message = malloc(log_len);
 		if(log_message){

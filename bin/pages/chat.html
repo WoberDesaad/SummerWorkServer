@@ -15,11 +15,21 @@
 				<div style="clear:both"></div>
 			</div>
 			 
-			<div id="chatbox"></div>
+			<textarea id="chatbox" style="overflow:auto;">
+			</textarea>
+			
+			<script type="text/javascript">
+				var xmlhttp, text;
+				xmlhttp = new XMLHttpRequest();
+				xmlhttp.open('GET', '../../chat.txt', false);
+				xmlhttp.send();
+				text = xmlhttp.responseText;
+				document.getElementById("chatbox").innerHTML = text;
+			</script>
 			 
-			<form name="message" action="">
-				<input name="usermsg" type="text" id="usermsg" size="63" />
-				<input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+			<form name="message" method="POST">
+				<input name="usermsg" type="text" id="usermsg" size="63" autofocus/>
+				<input name="submitmsg" type="submit"/>
 			</form>
 		</div>
 	</body>

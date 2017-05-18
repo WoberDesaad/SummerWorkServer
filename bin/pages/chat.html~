@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<link type="text/css" rel="stylesheet" href="./style.css" />
+	<head>
+		<title>Chat - Customer Module</title>
+	</head>
+	<body>
+		<h1>
+			Crimson: Chat
+		</h1>
+		<div id="wrapper">
+			<div id="menu">
+				<p class="welcome">Welcome, <b></b></p>
+				<p class="logout"><a id="exit" href="./basic.html">Exit Chat</a></p>
+				<div style="clear:both"></div>
+			</div>
+			 
+			<div id="chatbox">
+			</div>
+			 
+			<form name="message" action="">
+				<input name="usermsg" type="text" id="usermsg" size="63" />
+				<input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+			</form>
+		</div>
+	</body>
+	<script type="text/javascript" src="../scripts/jquerey.js"></script>
+	<script type="text/javascript">
+		// jQuery Document
+		$(document).ready(function(){
+		 
+		});
+		//If user submits the form
+		$("#submitmsg").click(function(){	
+			var clientmsg = $("#usermsg").val();
+			$.post("chatpost.php", {text: clientmsg});				
+			$("#usermsg").attr("value", "");
+			return false;
+		});
+	</script>
+	
+</html>
+
+
