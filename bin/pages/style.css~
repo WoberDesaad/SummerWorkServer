@@ -26,8 +26,9 @@ a {
 #wrapper, #loginform {
     margin:0 auto;
     padding-bottom:25px;
+    padding:25px;
     background:#EBF4FB;
-    width:504px;
+    width:700px;
     border:1px solid #ACD8F0; }
   
 #loginform { padding-top:18px; }
@@ -36,20 +37,32 @@ a {
   
 #chatbox {
     text-align:left;
-    margin:0 auto;
+    margin:10 auto;
     margin-bottom:25px;
     padding:10px;
     background:#fff;
-    height:270px;
-    width:430px;
+    height:290px;
+    width:650px;
     border:1px solid #ACD8F0;
-    overflow:auto; }
+    overflow:auto;
+}
   
 #usermsg {
-    width:395px;
+    width:500px;
     border:1px solid #ACD8F0; }
   
 #submit { width: 60px; }
+
+#Time { 
+    margin-left:auto;
+    margin-right:auto;
+    top: 5px;
+    width:auto;
+    color:#666;
+    background:blue;
+    position:relative; 
+	font:20px; 
+	padding: 3px; }
   
 .error { color: #ff0000; }
   

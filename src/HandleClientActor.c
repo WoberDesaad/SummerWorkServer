@@ -92,7 +92,7 @@ void* handle_client_actor(void *arg){
 			}else{
 				sendFile = fopen(cptr_start, "r");
 				if(sendFile == NULL){
-					sprintf(mess_buff, "HTTP/1.0 404 File Not Found\r\n\r\n<html>This Page Does Not Exist!!!!\nHahaahahahhahahahah!!!</html>\r\n");
+					sprintf(mess_buff, "HTTP/1.0 404 File Not Found\r\n\r\n<html><head>ERROR 404... Page Not Found!!!</head></html>\r\n");
 					sprintf(log_buffer, "%sFile Not Found...", log_buffer);
 
 					err = send(remfd, mess_buff, strlen((char*)mess_buff), 0);
@@ -146,6 +146,11 @@ void* handle_client_actor(void *arg){
 			while(cptr_start[c] != '&'){
 				if(cptr_start[c] == '+'){
 					submit_buff[c] = ' ';
+				}else if(cptr_start[c] == '%'){
+					submit_buff[c] = ' ';
+					submit_buff[c+1] = ' ';
+					submit_buff[c+2] = ' ';
+					c+=2;
 				}else{
 					submit_buff[c] = cptr_start[c];
 				}
@@ -154,8 +159,8 @@ void* handle_client_actor(void *arg){
 			submit_buff[c] = '\0';
 			
 			chatFile = fopen(chat_file, "a");
-			
-			fprintf(chatFile, "Client Said: %s\n", submit_buff);
+				
+			fprintf(chatFile, "%s>: %s\n", inet_ntoa(client->addr.sin_addr), submit_buff);
 			
 			if(!chatFile){
 				printf("Error Opening File!\n");

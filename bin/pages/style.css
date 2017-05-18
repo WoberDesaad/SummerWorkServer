@@ -52,6 +52,14 @@ a {
     border:1px solid #ACD8F0; }
   
 #submit { width: 60px; }
+
+#Time { 
+    margin-left:auto;
+    margin-right:auto;
+    width:auto;
+    color:#666;
+    background:blue;
+    position:relative;  }
   
 .error { color: #ff0000; }
   

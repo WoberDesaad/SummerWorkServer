@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html>
-	<style>
-		body {
-			background-color: lightblue;
-		}
-		h1 {
-			color: red;
-			text-align: center;
-			font-size: 60px;
-		}
-		p {
-			font-family: verdana;
-			font-size: 20px;
-		}
-	</style>
-	<body>
+	<link type="text/css" rel="stylesheet" href="./style.css" />
+	<center id="Time" style="position:center"></center>
+	<div><a class="b1" href="./basic.html">Main</a></div>
+	<body onload="startTime()">
 		<h1>
 			Crimson
 		</h1>
-		<div><a class="b1" href="./basic.html">Main</a></div>
 	</body>
+	<script>
+		function startTime() {
+			document.getElementById('Time').innerHTML = new Date()
+			var t = setTimeout(startTime, 500);
+		}
+	</script>
 </html>
 
 

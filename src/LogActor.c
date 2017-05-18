@@ -18,10 +18,11 @@ void* handle_log_actor(void *arg){
 	int log_len;
 	char time_buff[256];
 	struct tm * tmtime;
+	time_t t;
 	
 	ActorQueues* Q = arg;
 	
-	time_t t = time(NULL);
+	t = time(NULL);
 	tmtime = localtime(&t);
 	strftime(time_buff, 256, "%T, %A, %B %d %Y", tmtime);
 	
@@ -43,8 +44,8 @@ void* handle_log_actor(void *arg){
 			break;
 		}
 	
-		printf("%s: ", time_buff);
-		printf("%s\n", log_ptr);
+		//printf("%s: ", time_buff);
+		//printf("%s\n", log_ptr);
 		
 		log_len = strlen(log_ptr);
 		

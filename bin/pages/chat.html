@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<link type="text/css" rel="stylesheet" href="./style.css" />
+	<center id="Time" style="position:center"></center>
 	<head>
 		<title>Chat - Customer Module</title>
 	</head>
-	<body>
+	<body onload="loadText();startTime();">
 		<h1>
 			Crimson: Chat
 		</h1>
@@ -15,11 +16,11 @@
 				<div style="clear:both"></div>
 			</div>
 			 
-			<textarea id="chatbox" style="overflow:auto;resize: none">
+			<textarea readonly id="chatbox" style="overflow:auto;resize: none">
 			</textarea>
 			
 			<script type="text/javascript">
-				setInterval(function(){ 
+				function loadText(){
 					var xmlhttp, text;
 					xmlhttp = new XMLHttpRequest();
 					xmlhttp.open('GET', '../../chat.txt', false);
@@ -28,7 +29,26 @@
 					var chatty = document.getElementById("chatbox");
 					chatty.innerHTML = text;
 					chatty.scrollTop = chatty.scrollHeight;
-				 }, 1000);
+				}
+				
+				function sendText(){
+					var xmlhttp, text;
+					xmlhttp = new XMLHttpRequest();
+					xmlhttp.open('GET', '../../chat.txt', false);
+					xmlhttp.send();
+					text = xmlhttp.responseText;
+					var chatty = document.getElementById("chatbox");
+					chatty.innerHTML = text;
+					chatty.scrollTop = chatty.scrollHeight;
+				}
+			</script>
+			
+			<script>
+				function startTime() {
+					loadText()
+					document.getElementById('Time').innerHTML = new Date()
+					var t = setTimeout(startTime, 1000);
+				}
 			</script>
 			 
 			<form name="message" method="POST">

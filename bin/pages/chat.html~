@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html>
 	<link type="text/css" rel="stylesheet" href="./style.css" />
+	<center id="Time" style="position:center"></center>
 	<head>
 		<title>Chat - Customer Module</title>
 	</head>
-	<body>
+	<body onload="loadText();startTime();">
 		<h1>
 			Crimson: Chat
 		</h1>
 		<div id="wrapper">
 			<div id="menu">
-				<p class="welcome">Welcome, <b></b></p>
+				<p class="welcome">Type here to discuss anything!<b></b></p>
 				<p class="logout"><a id="exit" href="./basic.html">Exit Chat</a></p>
 				<div style="clear:both"></div>
 			</div>
 			 
-			<div id="chatbox">
-			</div>
+			<textarea readonly id="chatbox" style="overflow:auto;resize: none">
+			</textarea>
+			
+			<script type="text/javascript">
+				function loadText(){
+					var xmlhttp, text;
+					xmlhttp = new XMLHttpRequest();
+					xmlhttp.open('GET', '../../chat.txt', false);
+					xmlhttp.send();
+					text = xmlhttp.responseText;
+					var chatty = document.getElementById("chatbox");
+					chatty.innerHTML = text;
+					chatty.scrollTop = chatty.scrollHeight;
+				}
+			
+				setInterval(loadText(), 1000);
+				
+				function sendText(){
+					var xmlhttp, text;
+					xmlhttp = new XMLHttpRequest();
+					xmlhttp.open('GET', '../../chat.txt', false);
+					xmlhttp.send();
+					text = xmlhttp.responseText;
+					var chatty = document.getElementById("chatbox");
+					chatty.innerHTML = text;
+					chatty.scrollTop = chatty.scrollHeight;
+				}
+			</script>
+			
+			<script>
+				function startTime() {
+					document.getElementById('Time').innerHTML = new Date()
+					var t = setTimeout(startTime, 500);
+				}
+			</script>
 			 
-			<form name="message" action="">
-				<input name="usermsg" type="text" id="usermsg" size="63" />
-				<input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+			<form name="message" method="POST">
+				<input name="usermsg" type="text" id="usermsg" size="63" autofocus/>
+				<input name="submitmsg" type="submit"/>
 			</form>
 		</div>
 	</body>
-	<script type="text/javascript" src="../scripts/jquerey.js"></script>
-	<script type="text/javascript">
-		// jQuery Document
-		$(document).ready(function(){
-		 
-		});
-		//If user submits the form
-		$("#submitmsg").click(function(){	
-			var clientmsg = $("#usermsg").val();
-			$.post("chatpost.php", {text: clientmsg});				
-			$("#usermsg").attr("value", "");
-			return false;
-		});
-	</script>
-	
 </html>
 
 
