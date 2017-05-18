@@ -564,3 +564,137 @@ Starting logging...12:45:04, Thursday, May 18 201712:45:07, Thursday, May 18 201
 
 12:45:16, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
 
+Starting logging...12:51:26, Thursday, May 18 201712:51:31, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+12:51:31, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+12:51:31, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:51:34, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...Refreshing <chat.html>...Client Closed
+
+12:51:34, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+12:51:34, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+12:51:34, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:51:39, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+12:51:39, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+12:51:39, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:54:21, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+12:54:22, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+12:54:22, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:54:45, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+12:54:45, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+12:54:45, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:54:53, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+12:54:53, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+12:54:53, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:55:07, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+12:55:07, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+12:55:07, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:55:25, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+12:55:25, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+12:55:25, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:55:26, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+12:55:26, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+12:55:26, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:55:26, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+12:55:26, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+12:55:26, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:55:36, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+12:55:36, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+12:55:36, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:55:58, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+12:55:58, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+12:55:58, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:56:14, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...Refreshing <chat.html>...Client Closed
+
+12:56:14, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+12:56:14, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+12:56:14, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:56:20, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...Refreshing <chat.html>...Client Closed
+
+12:56:20, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+12:56:20, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+12:56:20, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:56:25, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...Refreshing <chat.html>...Client Closed
+
+12:56:25, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+12:56:25, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+12:56:25, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:57:40, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/chat.html>...File Found..Sent...Client Closed
+
+12:57:40, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </pages/style.css>...File Found..Sent...Client Closed
+
+12:57:41, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:57:42, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:57:43, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:57:44, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:57:45, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:57:46, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:57:47, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:57:48, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:57:49, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:57:50, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:57:51, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:57:52, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:57:53, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:57:54, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:57:55, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+
+12:57:56, Thursday, May 18 2017: HCA: Client <127.0.0.1> Connected...GET </chat.txt>...File Found..Sent...Client Closed
+

@@ -10,21 +10,25 @@
 		</h1>
 		<div id="wrapper">
 			<div id="menu">
-				<p class="welcome">Welcome, <b></b></p>
+				<p class="welcome">Type here to discuss anything!<b></b></p>
 				<p class="logout"><a id="exit" href="./basic.html">Exit Chat</a></p>
 				<div style="clear:both"></div>
 			</div>
 			 
-			<textarea id="chatbox" style="overflow:auto;">
+			<textarea id="chatbox" style="overflow:auto;resize: none">
 			</textarea>
 			
 			<script type="text/javascript">
-				var xmlhttp, text;
-				xmlhttp = new XMLHttpRequest();
-				xmlhttp.open('GET', '../../chat.txt', false);
-				xmlhttp.send();
-				text = xmlhttp.responseText;
-				document.getElementById("chatbox").innerHTML = text;
+				setInterval(function(){ 
+					var xmlhttp, text;
+					xmlhttp = new XMLHttpRequest();
+					xmlhttp.open('GET', '../../chat.txt', false);
+					xmlhttp.send();
+					text = xmlhttp.responseText;
+					var chatty = document.getElementById("chatbox");
+					chatty.innerHTML = text;
+					chatty.scrollTop = chatty.scrollHeight;
+				 }, 1000);
 			</script>
 			 
 			<form name="message" method="POST">
