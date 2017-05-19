@@ -1,10 +1,29 @@
 /* CSS Document */
+html {
+	position:fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
 h1 {
 	color: red;
 	text-align: center;
 	font-size: 80px;
 }
+
+h2 {
+	color: purple;
+	text-align: left;
+	font-size: 40px;
+}
+
 body {
+	position:fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 	background-color: lightblue;
     font:20px arial;
     color: #222;
@@ -60,6 +79,13 @@ a {
     color:blue;
     background:lightblue;
     position:relative;  }
+    
+#PDFBox {
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	position: relative;
+}
   
 .error { color: #ff0000; }
   

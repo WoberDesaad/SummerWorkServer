@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<link type="text/css" rel="stylesheet" href="./style.css" />
-	<body>
+	<center id="Time" style="position:center"></center>
+	<body onload="startTime()">
 		<h1>
 			Crimson
 		</h1>
-		<div><a class="b2" href="./issues.html">Issues</a></div>
-		<div><a class="b3" href="./chat.html">Chat</a></div>
-		<div><a class="b4" href="./help.html">Help</a></div>
-		<div><a class="b5" href="./about.html">About</a></div>
 	</body>
+	<center>
+		<a class="b2" href="./issues.html">| Issues |</a>
+		<a class="b3" href="./chat.html">| Chat |</a>
+		<a class="b4" href="./help.html">| Help |</a>
+		<a class="b5" href="./about.html">| About |</a>
+	</center>
+	
+	<script>
+		function startTime() {
+			document.getElementById('Time').innerHTML = new Date()
+			var t = setTimeout(startTime, 500);
+		}
+	</script>
 </html>
 
 

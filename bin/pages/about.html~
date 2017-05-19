@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<link type="text/css" rel="stylesheet" href="./style.css" />
+	<center id="Time" style="position:center"></center>
 	<div><a class="b1" href="./basic.html">Main</a></div>
-	<body>
+	<body onload="startTime()">
 		<h1>
 			Crimson
 		</h1>
@@ -16,6 +17,13 @@
 			and to log questions and answers for easier troubleshooting.	
 		</p1>
 	</body>
+	
+	<script>
+		function startTime() {
+			document.getElementById('Time').innerHTML = new Date()
+			var t = setTimeout(startTime, 500);
+		}
+	</script>
 </html>
 
 

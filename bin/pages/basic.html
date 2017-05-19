@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<link type="text/css" rel="stylesheet" href="./style.css" />
+	<script type="text/javascript" src="../scripts/scripts.js"></script>
 	<center id="Time" style="position:center"></center>
 	<body onload="startTime()">
 		<h1>
@@ -8,18 +9,11 @@
 		</h1>
 	</body>
 	<center>
-		<a class="b2" href="./issues.html">| Issues |</a>
-		<a class="b3" href="./chat.html">| Chat |</a>
-		<a class="b4" href="./help.html">| Help |</a>
-		<a class="b5" href="./about.html">| About |</a>
+		<a href="./issues.html">| Issues |</a>
+		<a href="./chat.html">| Chat |</a>
+		<a href="./help.html">| Help |</a>
+		<a href="./about.html">| About |</a>
 	</center>
-	
-	<script>
-		function startTime() {
-			document.getElementById('Time').innerHTML = new Date()
-			var t = setTimeout(startTime, 500);
-		}
-	</script>
 </html>
 
 
