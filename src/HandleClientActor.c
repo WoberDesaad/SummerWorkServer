@@ -63,7 +63,7 @@ void* handle_client_actor(void *arg){
 			continue;
 		}
 		
-		printf("%s\n", rec_buff);
+		//printf("%s\n", rec_buff);
 	
 		if(rec_buff[0] == 'G' && rec_buff[1] == 'E' && rec_buff[2] == 'T'){
 			sprintf(log_buffer, "%sGET </", log_buffer);
