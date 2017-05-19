@@ -15,7 +15,6 @@ void* handle_log_actor(void *arg){
 		
 	//Logging Stuff
 	char* log_ptr;
-	int log_len;
 	char time_buff[256];
 	struct tm * tmtime;
 	time_t t;
@@ -47,15 +46,12 @@ void* handle_log_actor(void *arg){
 		//printf("%s: ", time_buff);
 		//printf("%s\n", log_ptr);
 		
-		log_len = strlen(log_ptr);
-		
 		logFile = fopen(log_file, "a");
 		
 		fprintf(logFile, "%s: %s\n", time_buff, log_ptr);
 
 		fclose(logFile);
 		
-		bzero(log_ptr, log_len);
 		bzero(time_buff, 256);
 		free(log_ptr);
 	}

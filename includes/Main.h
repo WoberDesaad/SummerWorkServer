@@ -12,6 +12,6 @@
 #include <arpa/inet.h>
 #include <pthread.h>
 
-#define NUM_HANDLE_CLIENT_ACTORS 2
+#define NUM_HANDLE_CLIENT_ACTORS 1
 #define NUM_LOG_ACTORS 1
 #define PORT1 12340

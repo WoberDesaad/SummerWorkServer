@@ -146,6 +146,11 @@ void* handle_client_actor(void *arg){
 			while(cptr_start[c] != '&'){
 				if(cptr_start[c] == '+'){
 					submit_buff[c] = ' ';
+				}else if(cptr_start[c] == '%'){
+					submit_buff[c] = ' ';
+					submit_buff[c+1] = ' ';
+					submit_buff[c+2] = ' ';
+					c+=2;
 				}else{
 					submit_buff[c] = cptr_start[c];
 				}
