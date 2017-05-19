@@ -30,8 +30,6 @@
 					chatty.innerHTML = text;
 					chatty.scrollTop = chatty.scrollHeight;
 				}
-			
-				setInterval(loadText(), 1000);
 				
 				function sendText(){
 					var xmlhttp, text;
@@ -47,8 +45,9 @@
 			
 			<script>
 				function startTime() {
+					loadText()
 					document.getElementById('Time').innerHTML = new Date()
-					var t = setTimeout(startTime, 500);
+					var t = setTimeout(startTime, 1000);
 				}
 			</script>
 			 

@@ -63,11 +63,10 @@ void* handle_client_actor(void *arg){
 			continue;
 		}
 		
-		//printf("%s\n", rec_buff);
+		printf("%s\n", rec_buff);
 	
 		if(rec_buff[0] == 'G' && rec_buff[1] == 'E' && rec_buff[2] == 'T'){
 			sprintf(log_buffer, "%sGET </", log_buffer);
-			//printf("GET\n");
 			
 			//determine what file they want
 			cptr_start = strchr(rec_buff, '/');
@@ -82,7 +81,6 @@ void* handle_client_actor(void *arg){
 			cptr_start = str_buff + 1;
 			
 			sprintf(log_buffer, "%s%s>...", log_buffer, cptr_start);
-			//printf("%s\n", cptr_start);
 			
 			if(!strcmp(cptr_start, "")){
 				sprintf(mess_buff, "HTTP/1.0 200 OK\r\n\r\n<html><meta http-equiv =\"refresh\" content=\"0; url=/pages/basic.html\"/></html>\r\n");
@@ -108,12 +106,10 @@ void* handle_client_actor(void *arg){
 				}else{
 					sprintf(mess_buff, "HTTP/1.0 200 OK\r\n\r\n");
 					sprintf(log_buffer, "%sFile Found..", log_buffer);
-					//printf("File Found..");
 					
 					err = send(remfd, mess_buff, strlen((char*)mess_buff), 0);
 					if(err < 0){
 						sprintf(log_buffer, "%s%s\n", log_buffer, strerror(errno));
-						//printf("%s%s\n", log_buffer, strerror(errno));
 						free(conn_ptr);
 						continue;
 					}	
@@ -135,7 +131,6 @@ void* handle_client_actor(void *arg){
 					fclose(sendFile);
 					
 					sprintf(log_buffer, "%sSent...", log_buffer);
-					//printf("Sent\n");
 				}
 				bzero(&str_buff, 256);
 			}
@@ -187,14 +182,12 @@ void* handle_client_actor(void *arg){
 			sprintf(log_buffer, "%sRefreshing <chat.html>...", log_buffer);
 			
 		}else{
-			//printf("Unknown\n");
 		}		
 		bzero(&mess_buff, 8192);
 		bzero(&rec_buff, 8192);
 		close(remfd);
 
 		sprintf(log_buffer, "%sClient Closed\n\0", log_buffer);
-		//printf("Client Closed\n");
 		log_len = strlen(log_buffer);
 		log_message = malloc(log_len);
 		if(log_message){

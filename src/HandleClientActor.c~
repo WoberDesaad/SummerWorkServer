@@ -62,6 +62,8 @@ void* handle_client_actor(void *arg){
 			free(conn_ptr);
 			continue;
 		}
+		
+		//printf("%s\n", rec_buff);
 	
 		if(rec_buff[0] == 'G' && rec_buff[1] == 'E' && rec_buff[2] == 'T'){
 			sprintf(log_buffer, "%sGET </", log_buffer);
@@ -169,6 +171,7 @@ void* handle_client_actor(void *arg){
 			
 			fclose(chatFile);
 			
+			
 			sprintf(mess_buff, "HTTP/1.0 200 OK\r\n\r\n<html><meta http-equiv =\"refresh\" content=\"0; url=/pages/chat.html\"/></html>\r\n");
 			err = send(remfd, mess_buff, strlen((char*)mess_buff), 0);
 			if(err < 0){
@@ -178,9 +181,7 @@ void* handle_client_actor(void *arg){
 			}
 			sprintf(log_buffer, "%sRefreshing <chat.html>...", log_buffer);
 			
-			
 		}else{
-			printf("Unknown\n");
 		}		
 		bzero(&mess_buff, 8192);
 		bzero(&rec_buff, 8192);

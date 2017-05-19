@@ -2,9 +2,7 @@
 <html>
 	<link type="text/css" rel="stylesheet" href="./style.css" />
 	<center id="Time" style="position:center"></center>
-	<head>
-		<title>Chat - Customer Module</title>
-	</head>
+	<title>Chat - Customer Module</title>
 	<body onload="loadText();startTime();">
 		<h1>
 			Crimson: Chat
@@ -16,7 +14,7 @@
 				<div style="clear:both"></div>
 			</div>
 			 
-			<textarea readonly id="chatbox" style="overflow:auto;resize: none">
+			<textarea readonly id="chatbox" style="overflow:auto;resize:none;">
 			</textarea>
 			
 			<script type="text/javascript">
@@ -32,14 +30,13 @@
 				}
 				
 				function sendText(){
-					var xmlhttp, text;
+					var xmlhttp;
+					var msg = document.getElementById("usermsg");
 					xmlhttp = new XMLHttpRequest();
-					xmlhttp.open('GET', '../../chat.txt', false);
-					xmlhttp.send();
-					text = xmlhttp.responseText;
-					var chatty = document.getElementById("chatbox");
-					chatty.innerHTML = text;
-					chatty.scrollTop = chatty.scrollHeight;
+					xmlhttp.open('POST', './pages/chat.html', false);
+					xmlhttp.send("usermsg=" + msg.value + "&");
+					msg.value = "";
+					return false;
 				}
 			</script>
 			
@@ -51,7 +48,7 @@
 				}
 			</script>
 			 
-			<form name="message" method="POST">
+			<form name="message" onclick="sendText();return false;">
 				<input name="usermsg" type="text" id="usermsg" size="63" autofocus/>
 				<input name="submitmsg" type="submit"/>
 			</form>
