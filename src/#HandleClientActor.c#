@@ -202,5 +202,7 @@ void* handle_client_actor(void *arg){
 	return NULL;
 }
 
+int get_credentials(){
 
+}
 
