@@ -53,7 +53,18 @@ a {
 #loginform { padding-top:18px; }
   
     #loginform p { margin: 5px; }
-  
+#logbox {
+	text-align:left;
+	margin:10px;
+	margin-bottom:25px;
+	padding:10px;
+	background:#fff;
+	height:310;
+	width:650;
+	border:1px solid #ACD8F0;
+	overflow:auto;
+}
+
 #chatbox {
     text-align:left;
     margin:10 auto;
@@ -86,7 +97,14 @@ a {
 	width: auto;
 	position: relative;
 }
-  
+
+#LOGBox {
+	margin-left: auto;
+	margin-right: auto;
+	width: 800;
+	height: 600;
+}
+
 .error { color: #ff0000; }
   
 #menu { padding:12.5px 25px 12.5px 25px; }

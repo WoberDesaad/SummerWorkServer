@@ -78,7 +78,10 @@ int main()
  	}
   	printf("Listening on port %d...\n\n", PORT1);
   
+
   	while(1){  
+		printf("#> ");
+	
 		rem_addr_len = sizeof(struct sockaddr_in);
 
   		//Select
