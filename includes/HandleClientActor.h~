@@ -15,8 +15,6 @@
 #include "Actors.h"
 #include "BlockingQueue.h"
 
-#define FILE_BUFFER_SIZE 8192
-
 void* handle_client_actor(void *arg);
 
 struct connection_data{
