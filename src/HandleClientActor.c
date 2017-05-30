@@ -39,10 +39,10 @@ void* handle_client_actor(void *arg){
 	
 	char file_buffer[FILE_BUFFER_SIZE];
 	
-	struct file_actor_request* far;
+	struct file_actor_request far;
 	
-	far->return_queue = return_queue;
-	far->buffer = file_buffer;
+	far.return_queue = return_queue;
+	far.buffer = file_buffer;
 	
 	struct connection_data* client;
 	
@@ -171,6 +171,14 @@ void* handle_client_actor(void *arg){
 	}
 	printf("Handle Client Thread Done!\n");
 	return NULL;
+}
+
+int process_request(char* request, struct request* req){
+	
+}
+
+int send_all(char* buffer, int n){
+	
 }
 
 int get_credentials(){
