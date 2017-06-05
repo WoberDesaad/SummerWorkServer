@@ -1,0 +1,29 @@
+Starting logging...18:10:34, Thursday, June 01 201718:10:49, Thursday, June 01 2017: HCA: Client <127.0.0.1> Connected...Client Closed
+
+18:10:50, Thursday, June 01 2017: HCA: Client <127.0.0.1> Connected...Client Closed
+
+18:10:55, Thursday, June 01 2017: HCA: Client <127.0.0.1> Connected...Client Closed
+
+18:10:56, Thursday, June 01 2017: HCA: Client <127.0.0.1> Connected...Client Closed
+
+18:11:03, Thursday, June 01 2017: HCA: Client <127.0.0.1> Connected...Client Closed
+
+Starting logging...18:12:16, Thursday, June 01 201718:12:23, Thursday, June 01 2017: HCA: Client <127.0.0.1> Connected...Client Closed
+
+Starting logging...18:14:08, Thursday, June 01 201718:14:23, Thursday, June 01 2017: HCA: Client <127.0.0.1> Connected...Client Closed
+
+18:14:43, Thursday, June 01 2017: HCA: Client <127.0.0.1> Connected...Client Closed
+
+Starting logging...18:15:51, Thursday, June 01 201718:15:57, Thursday, June 01 2017: HCA: Client <127.0.0.1> Connected...Client Closed
+
+18:16:07, Thursday, June 01 2017: HCA: Client <127.0.0.1> Connected...Client Closed
+
+Starting logging...18:51:42, Thursday, June 01 201718:51:49, Thursday, June 01 2017: HCA: Client <127.0.0.1> Connected...GET </ >...File Not Found...Client Closed
+
+18:51:50, Thursday, June 01 2017: HCA: Client <127.0.0.1> Connected...GET </favicon.ico >...File Not Found...Client Closed
+
+18:51:57, Thursday, June 01 2017: HCA: Client <127.0.0.1> Connected...GET </basic.html >...File Not Found...Client Closed
+
+18:52:13, Thursday, June 01 2017: HCA: Client <127.0.0.1> Connected...GET </resources/pages/basic.html >...File Not Found...Client Closed
+ü[òva
+

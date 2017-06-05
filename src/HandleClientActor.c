@@ -1,5 +1,6 @@
 //Name: Robert Appelmann
 #include "HandleClientActor.h"
+#include "FileActor.h"
 #include "BlockingQueue.h"
 
 extern char* quit;
@@ -15,20 +16,19 @@ void* handle_client_actor(void *arg){
   	//I/O Message Stuff
 	char mess_buff[8192];
 	char str_buff[256];
-	char submit_buff[1024];
+	//char submit_buff[1024];
 	char rec_buff[8192];
  	int mess_len = 0;
 
-
 	//Random Stuff
-	int c;
-	char* cptr_start;
+	//int c;
+	//char* cptr_start;
 	void* conn_ptr;
 	void* log_message;
 	
 	//File stuff
 	FILE *sendFile;
-	FILE *chatFile;
+	//FILE *chatFile;
 		
 	//Logging Stuff
 	char log_buffer[1024];
@@ -37,19 +37,19 @@ void* handle_client_actor(void *arg){
 	ActorQueues* Q = arg;
 	BlockingQueue* return_queue = BlockingQueue_create();
 	
+	struct file_return* response;
+	
 	char file_buffer[FILE_BUFFER_SIZE];
 	
 	struct file_actor_request far;
 	
-	far.return_queue = return_queue;
-	far.buffer = file_buffer;
-	
 	struct connection_data* client;
+	struct http_request request;
+	
+	far.resource = &request;
+	far.return_queue = return_queue;
 	
 	while(1){
-		bzero(&str_buff, 256);
-		bzero(&mess_buff, 8192);
-		bzero(&rec_buff, 8192);
 		
 		conn_ptr = BlockingQueue_remove(Q->handle_client_q);
 		
@@ -72,26 +72,13 @@ void* handle_client_actor(void *arg){
 			continue;
 		}
 		
-		//printf("%s\n", rec_buff);
+		err = process_request(rec_buff, &request);
 	
-		if(rec_buff[0] == 'G' && rec_buff[1] == 'E' && rec_buff[2] == 'T'){
-			sprintf(log_buffer, "%sGET </", log_buffer);
+		if(request.method == GET){
 			
-			//determine what file they want
-			cptr_start = strchr(rec_buff, '/');
-			if(!cptr_start){
-				continue;
-			}
-			c = 0;
-			while(cptr_start[c] != ' ' && cptr_start[c] != '?' ){
-				str_buff[c] = cptr_start[c];
-				c++;
-			}
-			cptr_start = str_buff + 1;
+			sprintf(log_buffer, "%sGET </%s>...", log_buffer, request.path);
 			
-			sprintf(log_buffer, "%s%s>...", log_buffer, cptr_start);
-			
-			if(!strcmp(cptr_start, "")){
+			if(!strcmp(request.path, "")){
 				sprintf(mess_buff, "HTTP/1.0 200 OK\r\n\r\n<html><meta http-equiv =\"refresh\" content=\"0; url=/pages/basic.html\"/></html>\r\n");
 				err = send(remfd, mess_buff, strlen((char*)mess_buff), 0);
 				if(err < 0){
@@ -101,11 +88,24 @@ void* handle_client_actor(void *arg){
 				}
 				sprintf(log_buffer, "%sRedirected To <pages/basic.html>...", log_buffer);
 			}else{
-				far->file_name = cptr_start;
-				far->offset = 0;
-				far->buffer_size = FILE_BUFFER_SIZE;
+				BlockingQueue_add(Q->file_actor_q, far);
+											
+				while(1){
+					response = BlockingQueue_remove(far->return_queue);
+					if(!strcmp(response->data, "DONE")){
+						break;
+					}
+					while(response->len > 0){
+						err = send(remfd, response->data, response->len, 0);
+						if(err < 0){
+							printf("Error!");
+							break;
+						}
+						response->len -= err;
+					}
+				}
 			}
-		}else if(rec_buff[0] == 'P' && rec_buff[1] == 'O' && rec_buff[2] == 'S' && rec_buff[3] == 'T'){
+		}else if(request.method == POST){
 			c = 0;
 			while(c < mess_len - 4 && !( rec_buff[c] == '\r' && rec_buff[c+1] == '\n' && rec_buff[c+2] == '\r' && rec_buff[c+3] == '\n')){
 				c++;
@@ -151,9 +151,13 @@ void* handle_client_actor(void *arg){
 				continue;
 			}
 			sprintf(log_buffer, "%sRefreshing <chat.html>...", log_buffer);
+				
+		}else if(request.method == HEAD){
 			
 		}else{
-		}		
+			
+		}
+				
 		bzero(&mess_buff, 8192);
 		bzero(&rec_buff, 8192);
 		close(remfd);
@@ -169,19 +173,68 @@ void* handle_client_actor(void *arg){
 		bzero(&log_buffer, 1024);
 		free(conn_ptr);
 	}
+	
 	printf("Handle Client Thread Done!\n");
 	return NULL;
 }
 
-int process_request(char* request, struct request* req){
+int process_request(char* req, struct http_request* request){
+	int i, j;
+	char* cptr_start;
 	
-}
-
-int send_all(char* buffer, int n){
+	//Get request metod
+	if(req[0] == 'G' && req[1] == 'E' && req[2] == 'T' && req[3] == ' '){
+		request->method = GET;
+	}else if(req[0] == 'P' && req[1] == 'O' && req[2] == 'S' && req[3] == 'T' && req[4] == ' '){
+		request->method = POST;
+	}else if(req[0] == 'H' && req[1] == 'E' && req[2] == 'A' && req[3] == 'D' && req[4] == ' '){
+		request->method = HEAD;
+	}else{
+		return -ENOMETHOD;
+	}
 	
+	//Get Path
+	//determine what file they want
+	cptr_start = strchr(req, '/');
+	if(!cptr_start){
+		return -ENOPATH;
+	}
+	i = 0;
+	while(cptr_start[i+1] != ' ' && cptr_start[i+1] != '?' ){
+		i++;
+	}
+	request->file_name = (char*)malloc(i+1);
+	for(j = 0; j <= i; j++){
+		request->file_name[j] = cptr_start[j+1];
+	}
+	request->file_name[j] = '\0';	
+	
+	//Get Path-Params
+	cptr_start = strchr(req, '?');
+	if(cptr_start){
+		while(1){
+			//has params
+			i = 0;
+			while((cptr_start[i+1] >= '0' && cptr_start[i+1] <= '9') || (cptr_start[i+1] >= 'a' && cptr_start[i+1] <= 'z') || (cptr_start[i+1] >= 'A' && cptr_start[i+1] <= 'Z')){
+				i++;
+			}
+		}
+	}
+	
+	//Get HTTP Version
+	//Get Headers
+	//Get Body
+	return 0;
 }
 
-int get_credentials(){
-
+int send_all(int sock_fd, char* buffer, int n){
+	int err, sent;
+	while(sent < n){
+		err = send(sock_fd, &buffer[sent], n, 0);
+		if(err < 0){
+			return err;
+		}
+		sent += err;
+	}
+	return sent;
 }
-

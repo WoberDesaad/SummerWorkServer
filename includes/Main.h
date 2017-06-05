@@ -14,4 +14,5 @@
 
 #define NUM_HANDLE_CLIENT_ACTORS 1
 #define NUM_LOG_ACTORS 1
-#define PORT1 12340
+#define NUM_FILE_ACTORS 1
+#define PORT1 11111
