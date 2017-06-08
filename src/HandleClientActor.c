@@ -16,19 +16,19 @@ void* handle_client_actor(void *arg){
   	//I/O Message Stuff
 	char mess_buff[8192];
 	char str_buff[256];
-	//char submit_buff[1024];
+	char submit_buff[1024];
 	char rec_buff[8192];
  	int mess_len = 0;
 
 	//Random Stuff
-	//int c;
-	//char* cptr_start;
+	int c;
+	char* cptr_start;
 	void* conn_ptr;
 	void* log_message;
 	
 	//File stuff
 	FILE *sendFile;
-	//FILE *chatFile;
+	FILE *chatFile;
 		
 	//Logging Stuff
 	char log_buffer[1024];
@@ -46,7 +46,7 @@ void* handle_client_actor(void *arg){
 	struct connection_data* client;
 	struct http_request request;
 	
-	far.resource = &request;
+	far.file_req = &request;
 	far.return_queue = return_queue;
 	
 	while(1){
@@ -68,6 +68,7 @@ void* handle_client_actor(void *arg){
 
 		if(mess_len < 0){
 			sprintf(log_buffer, "%s%s\n", log_buffer, strerror(errno));
+			printf("FREE1\n");
 			free(conn_ptr);
 			continue;
 		}
@@ -75,38 +76,45 @@ void* handle_client_actor(void *arg){
 		err = process_request(rec_buff, &request);
 	
 		if(request.method == GET){
-			
+			printf("Get %s\n", request.path);
 			sprintf(log_buffer, "%sGET </%s>...", log_buffer, request.path);
 			
-			if(!strcmp(request.path, "")){
+			if(!strcmp(request.path, " ")){
 				sprintf(mess_buff, "HTTP/1.0 200 OK\r\n\r\n<html><meta http-equiv =\"refresh\" content=\"0; url=/pages/basic.html\"/></html>\r\n");
 				err = send(remfd, mess_buff, strlen((char*)mess_buff), 0);
 				if(err < 0){
 					sprintf(log_buffer, "%s%s\n", log_buffer, strerror(errno));
+					printf("Free2\n");
 					free(conn_ptr);
 					continue;
 				}
+				printf("Redirected\n");
 				sprintf(log_buffer, "%sRedirected To <pages/basic.html>...", log_buffer);
 			}else{
-				BlockingQueue_add(Q->file_actor_q, far);
+				BlockingQueue_add(Q->file_q, (void*)&far);
 											
 				while(1){
-					response = BlockingQueue_remove(far->return_queue);
+					printf("Doing Stuff\n");
+					
+					response = BlockingQueue_remove(far.return_queue);
+					
+					printf("Response: %s\n", response->data);
 					if(!strcmp(response->data, "DONE")){
 						break;
 					}
-					while(response->len > 0){
-						err = send(remfd, response->data, response->len, 0);
+					while(response->size > 0){
+						err = send(remfd, response->data, response->size, 0);
 						if(err < 0){
 							printf("Error!");
 							break;
 						}
-						response->len -= err;
+						response->size -= err;
 					}
 				}
 			}
 		}else if(request.method == POST){
-			c = 0;
+			/*
+			 * c = 0;
 			while(c < mess_len - 4 && !( rec_buff[c] == '\r' && rec_buff[c+1] == '\n' && rec_buff[c+2] == '\r' && rec_buff[c+3] == '\n')){
 				c++;
 			}
@@ -151,7 +159,7 @@ void* handle_client_actor(void *arg){
 				continue;
 			}
 			sprintf(log_buffer, "%sRefreshing <chat.html>...", log_buffer);
-				
+				*/
 		}else if(request.method == HEAD){
 			
 		}else{
@@ -171,6 +179,9 @@ void* handle_client_actor(void *arg){
 		}
 
 		bzero(&log_buffer, 1024);
+		
+		printf("Freeing!\n");
+		
 		free(conn_ptr);
 	}
 	
@@ -203,11 +214,11 @@ int process_request(char* req, struct http_request* request){
 	while(cptr_start[i+1] != ' ' && cptr_start[i+1] != '?' ){
 		i++;
 	}
-	request->file_name = (char*)malloc(i+1);
+	request->path = (char*)malloc(i+1);
 	for(j = 0; j <= i; j++){
-		request->file_name[j] = cptr_start[j+1];
+		request->path[j] = cptr_start[j+1];
 	}
-	request->file_name[j] = '\0';	
+	request->path[j] = '\0';	
 	
 	//Get Path-Params
 	cptr_start = strchr(req, '?');

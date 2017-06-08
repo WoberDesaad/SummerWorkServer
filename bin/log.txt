@@ -27,3 +27,12 @@ Starting logging...18:51:42, Thursday, June 01 201718:51:49, Thursday, June 01 2
 18:52:13, Thursday, June 01 2017: HCA: Client <127.0.0.1> Connected...GET </resources/pages/basic.html >...File Not Found...Client Closed
 ü[òva
 
+Starting logging...21:27:53, Wednesday, June 07 2017Starting logging...21:30:54, Wednesday, June 07 201721:31:11, Wednesday, June 07 2017: File Actor: File <resource/pages/basic.html > Not Found...Sending 404
+Starting logging...21:37:41, Wednesday, June 07 2017Starting logging...21:39:10, Wednesday, June 07 2017Starting logging...21:41:59, Wednesday, June 07 201721:42:02, Wednesday, June 07 2017: HCA: Client <127.0.0.1> Connected...GET </ >...Redirected To <pages/basic.html>...Client Closed
+
+Starting logging...21:42:52, Wednesday, June 07 2017Starting logging...21:42:52, Wednesday, June 07 2017Starting logging...21:42:52, Wednesday, June 07 2017Starting logging...21:43:04, Wednesday, June 07 201721:43:09, Wednesday, June 07 2017: File Actor: File <resources/pages/basic.html > Not Found...Sending 404
+Starting logging...21:46:29, Wednesday, June 07 2017Starting logging...21:47:46, Wednesday, June 07 201721:47:51, Wednesday, June 07 2017: File Actor: File <resources/pages/basic.html > Not Found...Sending 404
+Starting logging...21:48:57, Wednesday, June 07 2017Starting logging...21:51:34, Wednesday, June 07 201721:51:40, Wednesday, June 07 2017: File Actor: File <resources/pages/basic.html > Not Found...Sending 404
+Starting logging...21:52:46, Wednesday, June 07 201721:52:50, Wednesday, June 07 2017: File Actor: File <resources/pages/basic.html > Not Found...Sending 404
+Starting logging...21:55:44, Wednesday, June 07 201721:55:49, Wednesday, June 07 2017: File Actor: File <resources/pages/basic.html > Not Found...Sending 404
+Starting logging...21:57:25, Wednesday, June 07 201721:57:29, Wednesday, June 07 2017: File Actor: File <resources/pages/basic.html > Not Found...Sending 404

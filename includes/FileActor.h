@@ -2,6 +2,8 @@
 #define _FILE_ACTOR_H_
 
 #include "BlockingQueue.h"
+#include "Actors.h"
+#include "HandleClientActor.h"
 
 struct file_actor_request{
 	struct http_request* file_req;
@@ -12,5 +14,8 @@ struct file_return{
 	int size;
 	char* data;
 };
+
+void* file_actor(void* arg);
+void return_data(BlockingQueue* Q, char* data, int ret_len);
 
 #endif

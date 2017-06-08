@@ -51,7 +51,7 @@ struct request_params{
 
 struct http_request{
 	int method;
-	char* file_name;
+	char* path;
 	struct request_params* params;
 	int version;
 	struct http_header* headers;

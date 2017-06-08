@@ -25,6 +25,7 @@ void* handle_log_actor(void *arg){
 	tmtime = localtime(&t);
 	strftime(time_buff, 256, "%T, %A, %B %d %Y", tmtime);
 	
+
 	logFile = fopen(log_file, "a");
 	
 	fprintf(logFile, "Starting logging...%s", time_buff);
@@ -59,6 +60,4 @@ void* handle_log_actor(void *arg){
 	
 	return NULL;
 }
-
-
 
