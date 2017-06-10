@@ -2,7 +2,7 @@
 #define _FILE_ACTOR_H_
 
 #include "BlockingQueue.h"
-#include "Actors.h"
+#include "Actor.h"
 #include "HandleClientActor.h"
 
 struct file_actor_request{

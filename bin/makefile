@@ -20,7 +20,7 @@ LFLAGS =
 LIBS = -lpthread
 
 # define the C source files
-SRCS = Main.c HandleClientActor.c BlockingQueue.c LogActor.c FileActor.c
+SRCS = Main.c HandleClientActor.c BlockingQueue.c LogActor.c FileActor.c Actor.c
 
 #path
 VPATH = ../src/

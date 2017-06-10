@@ -12,5 +12,7 @@
 #include <arpa/inet.h>
 #include <pthread.h>
 
-#define NUM_HANDLE_CLIENT_ACTORS 1
-#define PORT1 11111
+#include "Actors.h"
+#include "BlockingQueue.h"
+
+void* handle_log_actor(void* arg);

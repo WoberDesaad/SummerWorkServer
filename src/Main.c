@@ -2,7 +2,7 @@
 //Class: ETEC3201 Networking and Communications
 //Program: Final Exam question 14
 //Time Server
-#include "Actors.h"
+#include "Actor.h"
 #include "HandleClientActor.h"
 #include "LogActor.h"
 #include "BlockingQueue.h"
@@ -79,7 +79,6 @@ int main()
   		return -1;
  	}
   	printf("Listening on port %d...\n\n", PORT1);
-  
 
   	while(1){  
 		printf("#> ");
@@ -100,9 +99,8 @@ int main()
 				BlockingQueue_add(Q.handle_client_q, quit);
 			}
 			
-			for(i = 0; i < NUM_LOG_ACTORS; i++){
-				BlockingQueue_add(Q.log_q, quit);
-			}
+			BlockingQueue_add(Q.log_q, quit);
+			BlockingQueue_add(Q.file_q, quit);
 			break;	
   		}else{
   			if(FD_ISSET(0, &fds)){
@@ -124,14 +122,12 @@ int main()
   				}
   				if(c ==  -1){
   					printf("Quit Command Received!\n");
-  					
 					for(i = 0; i < NUM_HANDLE_CLIENT_ACTORS; i++){
-  						BlockingQueue_add(Q.handle_client_q, quit);
+						BlockingQueue_add(Q.handle_client_q, quit);
 					}
 					
-					for(i = 0; i < NUM_LOG_ACTORS; i++){
-  						BlockingQueue_add(Q.log_q, quit);
-					}
+					BlockingQueue_add(Q.log_q, quit);
+					BlockingQueue_add(Q.file_q, quit);
   					break;
 				}
   			}
@@ -146,6 +142,7 @@ int main()
 					((struct connection_data*)connptr)->fd = remfd;
 					((struct connection_data*)connptr)->addr = rem_addr;
 					((struct connection_data*)connptr)->addr_len = rem_addr_len;
+					
 					BlockingQueue_add(Q.handle_client_q, connptr);
 				}
   			}

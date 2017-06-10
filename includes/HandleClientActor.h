@@ -15,7 +15,7 @@
 #include <arpa/inet.h>
 #include <pthread.h>
 
-#include "Actors.h"
+#include "Actor.h"
 #include "BlockingQueue.h"
 #include "FileActor.h"
 

@@ -5,7 +5,7 @@
 
 extern char* quit;
 
-char* chat_file = "chat.txt";
+char* chat_file = "../resources/chat.txt";
 
 void* handle_client_actor(void *arg){
 	//Local Variables	
@@ -15,31 +15,25 @@ void* handle_client_actor(void *arg){
   	
   	//I/O Message Stuff
 	char mess_buff[8192];
-	char str_buff[256];
 	char submit_buff[1024];
 	char rec_buff[8192];
  	int mess_len = 0;
 
 	//Random Stuff
-	int c;
+	int c, total_sent;
 	char* cptr_start;
 	void* conn_ptr;
-	void* log_message;
 	
 	//File stuff
-	FILE *sendFile;
 	FILE *chatFile;
 		
 	//Logging Stuff
 	char log_buffer[1024];
-	int log_len;
 
 	ActorQueues* Q = arg;
 	BlockingQueue* return_queue = BlockingQueue_create();
 	
 	struct file_return* response;
-	
-	char file_buffer[FILE_BUFFER_SIZE];
 	
 	struct file_actor_request far;
 	
@@ -50,7 +44,6 @@ void* handle_client_actor(void *arg){
 	far.return_queue = return_queue;
 	
 	while(1){
-		
 		conn_ptr = BlockingQueue_remove(Q->handle_client_q);
 		
 		if(((char*)conn_ptr)[0] == 'Q' && ((char*)conn_ptr)[1] == 'U' && ((char*)conn_ptr)[2] == 'I' && ((char*)conn_ptr)[3] == 'T'){
@@ -68,53 +61,55 @@ void* handle_client_actor(void *arg){
 
 		if(mess_len < 0){
 			sprintf(log_buffer, "%s%s\n", log_buffer, strerror(errno));
-			printf("FREE1\n");
 			free(conn_ptr);
+			close(remfd);
 			continue;
 		}
 		
 		err = process_request(rec_buff, &request);
-	
+		if(err < 0){
+			sprintf(log_buffer, "%sError processing Request. May not have been valid HTTP\n", log_buffer);
+			free(conn_ptr);
+			close(remfd);
+			continue;	
+		}
+		
 		if(request.method == GET){
-			printf("Get %s\n", request.path);
 			sprintf(log_buffer, "%sGET </%s>...", log_buffer, request.path);
 			
-			if(!strcmp(request.path, " ")){
+			if(!strcmp(request.path, "/")){
 				sprintf(mess_buff, "HTTP/1.0 200 OK\r\n\r\n<html><meta http-equiv =\"refresh\" content=\"0; url=/pages/basic.html\"/></html>\r\n");
 				err = send(remfd, mess_buff, strlen((char*)mess_buff), 0);
 				if(err < 0){
 					sprintf(log_buffer, "%s%s\n", log_buffer, strerror(errno));
-					printf("Free2\n");
 					free(conn_ptr);
 					continue;
 				}
-				printf("Redirected\n");
 				sprintf(log_buffer, "%sRedirected To <pages/basic.html>...", log_buffer);
 			}else{
 				BlockingQueue_add(Q->file_q, (void*)&far);
 											
-				while(1){
-					printf("Doing Stuff\n");
-					
+				while(1){					
 					response = BlockingQueue_remove(far.return_queue);
-					
-					printf("Response: %s\n", response->data);
 					if(!strcmp(response->data, "DONE")){
 						break;
 					}
+					total_sent = 0;
 					while(response->size > 0){
 						err = send(remfd, response->data, response->size, 0);
 						if(err < 0){
-							printf("Error!");
+							printf("Error! %s\n", strerror(errno));
 							break;
 						}
+						total_sent += err;
 						response->size -= err;
 					}
+					free(response->data);
+					free(response);
 				}
 			}
 		}else if(request.method == POST){
-			/*
-			 * c = 0;
+			c = 0;
 			while(c < mess_len - 4 && !( rec_buff[c] == '\r' && rec_buff[c+1] == '\n' && rec_buff[c+2] == '\r' && rec_buff[c+3] == '\n')){
 				c++;
 			}
@@ -150,7 +145,6 @@ void* handle_client_actor(void *arg){
 			
 			fclose(chatFile);
 			
-			
 			sprintf(mess_buff, "HTTP/1.0 200 OK\r\n\r\n<html><meta http-equiv =\"refresh\" content=\"0; url=/pages/chat.html\"/></html>\r\n");
 			err = send(remfd, mess_buff, strlen((char*)mess_buff), 0);
 			if(err < 0){
@@ -158,12 +152,9 @@ void* handle_client_actor(void *arg){
 				free(conn_ptr);
 				continue;
 			}
-			sprintf(log_buffer, "%sRefreshing <chat.html>...", log_buffer);
-				*/
+			sprintf(log_buffer, "%sRefreshing <chat.html>...", log_buffer);			
 		}else if(request.method == HEAD){
-			
 		}else{
-			
 		}
 				
 		bzero(&mess_buff, 8192);
@@ -171,20 +162,16 @@ void* handle_client_actor(void *arg){
 		close(remfd);
 
 		sprintf(log_buffer, "%sClient Closed\n\0", log_buffer);
-		log_len = strlen(log_buffer);
-		log_message = malloc(log_len);
+		
+		int log_len = strlen(log_buffer);
+		char* log_message = malloc(log_len);
 		if(log_message){
 			memcpy(log_message, log_buffer, log_len);
 			BlockingQueue_add(Q->log_q, log_message);
 		}
-
-		bzero(&log_buffer, 1024);
-		
-		printf("Freeing!\n");
 		
 		free(conn_ptr);
 	}
-	
 	printf("Handle Client Thread Done!\n");
 	return NULL;
 }
@@ -211,12 +198,12 @@ int process_request(char* req, struct http_request* request){
 		return -ENOPATH;
 	}
 	i = 0;
-	while(cptr_start[i+1] != ' ' && cptr_start[i+1] != '?' ){
+	while(cptr_start[i] != ' ' && cptr_start[i] != '?' ){
 		i++;
 	}
 	request->path = (char*)malloc(i+1);
-	for(j = 0; j <= i; j++){
-		request->path[j] = cptr_start[j+1];
+	for(j = 0; j < i; j++){
+		request->path[j] = cptr_start[j];
 	}
 	request->path[j] = '\0';	
 	
@@ -249,3 +236,4 @@ int send_all(int sock_fd, char* buffer, int n){
 	}
 	return sent;
 }
+

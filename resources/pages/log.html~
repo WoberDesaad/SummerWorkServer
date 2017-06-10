@@ -29,6 +29,7 @@
 			</script>
 			<script>
 				function startTime() {
+					loadText()
 					document.getElementById('Time').innerHTML = new Date()
 					var t = setTimeout(startTime, 1000);
 				}

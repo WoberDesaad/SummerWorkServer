@@ -11,33 +11,41 @@ void* file_actor(void* arg){
 	
 	int ret_len;
 	
-  	char dir[256] = "../resources";
-  	
-  	//getcwd(dir, 256);
-  	
-  	int dir_start = strlen(dir);
-	
 	FILE* sendFile = NULL;
 	
 	while(1){
+		printf("File Actor Waiting!\n");
 		far = BlockingQueue_remove(Q->file_q);
-	
+		
+		printf("%s\n", (char*)far);
+		
 		if(((char*)far)[0] == 'Q' && ((char*)far)[1] == 'U' && ((char*)far)[2] == 'I' && ((char*)far)[3] == 'T'){
 			//quitting time
-			break;
+			return NULL;
 		}
-	
-		memcpy(&dir[dir_start], far->file_req->path, strlen(far->file_req->path));
-		dir[dir_start + strlen(far->file_req->path)] = '\0';
 		
-		sendFile = fopen(dir, "r");
+		printf("Finding File\n");
+		
+		sendFile = fopen(far->file_req->path, "r");
 		if(sendFile == NULL){
-			sprintf(tmp_buffer, "HTTP/1.0 404 File Not Found\r\n\r\n<html><body>ERROR 404... Resource %s not found!!!</body></html>\r\n\0", dir);
-			sprintf(log_buffer, "File Actor: File <%s> Not Found...Sending 404\0", dir);
+			sprintf(tmp_buffer, "HTTP/1.0 404 File Not Found\r\n\r\n<html><body>ERROR 404... Resource %s not found!!!</body></html>\r\n", far->file_req->path);
+			sprintf(log_buffer, "File Actor: File <%s> Not Found...Sending 404\0", far->file_req->path);
 			
-			return_data(far->return_queue, tmp_buffer, strlen(tmp_buffer)+1);
-			return_data(far->return_queue, done, strlen(done)+1);			
+			printf("File not found\n");
+			
+			return_data(far->return_queue, tmp_buffer, strlen(tmp_buffer));
+			return_data(far->return_queue, done, strlen(done)+1);
+			
+			far = NULL;
+			//zero out buffers
+			bzero(tmp_buffer, strlen(tmp_buffer));
+			tmp_buffer[0] = '\0';
+			
+			printf("File done\n");
+			
+			continue;
 		}else{
+			printf("File Found\n");
 			
 			sprintf(tmp_buffer, "HTTP/1.0 200 OK\r\n");
 			//add headers
@@ -69,7 +77,6 @@ void* file_actor(void* arg){
 			BlockingQueue_add(Q->log_q, log_message);
 		}
 	}
-	return NULL;
 }
 
 void return_data(BlockingQueue* Q, char* data, int ret_len){	

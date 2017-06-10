@@ -4,7 +4,7 @@
 
 extern char* quit;
 
-char* log_file = "log.txt";
+char* log_file = "../resources/log.txt";
 
 void* handle_log_actor(void *arg){
 	//Local Variables	
@@ -25,10 +25,9 @@ void* handle_log_actor(void *arg){
 	tmtime = localtime(&t);
 	strftime(time_buff, 256, "%T, %A, %B %d %Y", tmtime);
 	
-
 	logFile = fopen(log_file, "a");
 	
-	fprintf(logFile, "Starting logging...%s", time_buff);
+	fprintf(logFile, "Starting logging...%s\n", time_buff);
 	
 	fclose(logFile);
 	
@@ -39,11 +38,13 @@ void* handle_log_actor(void *arg){
 		tmtime = localtime(&t);
 		strftime(time_buff, 256, "%T, %A, %B %d %Y", tmtime);
 		
-		if(log_ptr[0] == 'Q' && log_ptr[1] == 'U' && log_ptr[2] == 'I' && log_ptr[3] == 'T')
+		if(strlen(log_ptr) >= 4)
 		{
-			break;
+			if(log_ptr[0] == 'Q' && log_ptr[1] == 'U' && log_ptr[2] == 'I' && log_ptr[3] == 'T')
+			{
+				break;
+			}
 		}
-	
 		//printf("%s: ", time_buff);
 		//printf("%s\n", log_ptr);
 		

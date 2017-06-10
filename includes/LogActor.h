@@ -12,7 +12,7 @@
 #include <arpa/inet.h>
 #include <pthread.h>
 
-#include "Actors.h"
+#include "Actor.h"
 #include "BlockingQueue.h"
 
 void* handle_log_actor(void* arg);

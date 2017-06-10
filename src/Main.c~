@@ -6,6 +6,7 @@
 #include "HandleClientActor.h"
 #include "LogActor.h"
 #include "BlockingQueue.h"
+#include "FileActor.h"
 #include "Main.h"
 
 //Globals
@@ -30,10 +31,12 @@ int main()
 
 	//threads
 	pthread_t handle_client_threads[NUM_HANDLE_CLIENT_ACTORS];
-	pthread_t log_threads[NUM_LOG_ACTORS];
+	pthread_t log_thread;
+	pthread_t file_thread;
 	
 	Q.handle_client_q = BlockingQueue_create();
 	Q.log_q = BlockingQueue_create();
+	Q.file_q = BlockingQueue_create();
 
 	//initialize addr to zero
 	memset(&rem_addr, '\0', sizeof(struct sockaddr));
@@ -43,9 +46,8 @@ int main()
 		pthread_create(&handle_client_threads[i], NULL, handle_client_actor, (void*)&Q);
 	}
 	
-	for(i = 0; i < NUM_LOG_ACTORS; i++){
-		pthread_create(&log_threads[i], NULL, handle_log_actor, (void*)&Q);
-	}
+	pthread_create(&log_thread, NULL, handle_log_actor, (void*)&Q);
+	pthread_create(&file_thread, NULL, file_actor, (void*)&Q);
 	
 	//Create Socket
  	sockfd = socket(AF_INET, SOCK_STREAM, 0);
@@ -98,9 +100,8 @@ int main()
 				BlockingQueue_add(Q.handle_client_q, quit);
 			}
 			
-			for(i = 0; i < NUM_LOG_ACTORS; i++){
-				BlockingQueue_add(Q.log_q, quit);
-			}
+			BlockingQueue_add(Q.log_q, quit);
+			BlockingQueue_add(Q.file_q, quit);
 			break;	
   		}else{
   			if(FD_ISSET(0, &fds)){
@@ -154,9 +155,9 @@ int main()
 		pthread_join(handle_client_threads[i], NULL);
 	}
 	
-	for(i = 0; i < NUM_LOG_ACTORS; i++){
-		pthread_join(log_threads[i], NULL);
-	}
+	pthread_join(log_thread, NULL);
+	
+	pthread_join(file_thread, NULL);
 	
 	printf("\nAll Threads Terminated...");
   	
