@@ -59,7 +59,7 @@ struct http_request{
 };
 
 void* handle_client_actor(void *arg);
-int process_request(char* req, struct http_request* request);
+int process_request(char* req, struct http_request* request, int length);
 int send_all(int sock_fd, char* buffer, int n);
 
 #endif

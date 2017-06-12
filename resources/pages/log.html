@@ -3,17 +3,26 @@
 	<link type="text/css" rel="stylesheet" href="./style.css" />
 	<center id="Time" style="position:center"></center>
 	<title>Chat - Customer Module</title>
+	<div>
+		<a id="exit" href="./basic.html">| Main |</a>
+		<a href="./issues.html">| Issues |</a>
+		<a href="./chat.html">| Chat |</a>
+		<a href="./help.html">| Help |</a>
+		<a href="./about.html">| About |</a>
+		<a href="./log.html">| LOG |</a>
+	</div>
 	<body onload="loadText();startTime();">
 		<h1>
 			Crimson: LOG
 		</h1>
 		<div id="wrapper">
 			<div id="menu">
-				<p class="welcome">LOG!<b></b></p>
-				<p class="logout"><a id="exit" href="./basic.html">Exit Chat</a></p>
-				<div style="clear:both"></div>			 
-				<textarea readonly id="logbox"></textarea>
+				<p class="welcome">Type here to discuss anything!<b></b></p>
+				<div style="clear:both"></div>
 			</div>
+			 
+			<textarea readonly id="textbox" style="overflow:auto;resize:none;">
+			</textarea>
 			
 			<script type="text/javascript">
 				function loadText(){
@@ -22,11 +31,12 @@
 					xmlhttp.open('GET', '../../log.txt', false);
 					xmlhttp.send();
 					text = xmlhttp.responseText;
-					var chatty = document.getElementById("logbox");
+					var chatty = document.getElementById("textbox");
 					chatty.innerHTML = text;
 					chatty.scrollTop = chatty.scrollHeight;
 				}
 			</script>
+			
 			<script>
 				function startTime() {
 					document.getElementById('Time').innerHTML = new Date()

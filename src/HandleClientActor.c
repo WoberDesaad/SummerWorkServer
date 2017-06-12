@@ -20,7 +20,7 @@ void* handle_client_actor(void *arg){
  	int mess_len = 0;
 
 	//Random Stuff
-	int c, total_sent;
+	int c, i, total_sent;
 	char* cptr_start;
 	void* conn_ptr;
 	
@@ -66,7 +66,7 @@ void* handle_client_actor(void *arg){
 			continue;
 		}
 		
-		err = process_request(rec_buff, &request);
+		err = process_request(rec_buff, &request, mess_len);
 		if(err < 0){
 			sprintf(log_buffer, "%sError processing Request. May not have been valid HTTP\n", log_buffer);
 			free(conn_ptr);
@@ -75,10 +75,11 @@ void* handle_client_actor(void *arg){
 		}
 		
 		if(request.method == GET){
-			sprintf(log_buffer, "%sGET </%s>...", log_buffer, request.path);
+			//printf("Entering GET\n");
+			sprintf(log_buffer, "%sGET <%s>...", log_buffer, request.path);
 			
 			if(!strcmp(request.path, "/")){
-				sprintf(mess_buff, "HTTP/1.0 200 OK\r\n\r\n<html><meta http-equiv =\"refresh\" content=\"0; url=/pages/basic.html\"/></html>\r\n");
+				sprintf(mess_buff, "HTTP/1.0 200 OK\r\n\r\n<html><meta http-equiv =\"refresh\" content=\"0; url=/pages/basic.html\"/></html>\r\n\0");
 				err = send(remfd, mess_buff, strlen((char*)mess_buff), 0);
 				if(err < 0){
 					sprintf(log_buffer, "%s%s\n", log_buffer, strerror(errno));
@@ -107,54 +108,29 @@ void* handle_client_actor(void *arg){
 					free(response->data);
 					free(response);
 				}
+				
+			//printf("Exiting GET\n");
 			}
-		}else if(request.method == POST){
+		}else if(request.method == POST){	
+			//printf("Entering POST\n");
 			c = 0;
-			while(c < mess_len - 4 && !( rec_buff[c] == '\r' && rec_buff[c+1] == '\n' && rec_buff[c+2] == '\r' && rec_buff[c+3] == '\n')){
+			while(request.body[c] != '='){
 				c++;
 			}
-			while(rec_buff[c] != '='){
-				c++;
+			c++;
+			i=0;
+			while(request.body[c+i]){
+				submit_buff[i] = request.body[c+i];
+				i++;
 			}
-			
-			cptr_start = &rec_buff[c+1];
-			c = 0;
-			while(cptr_start[c] != '&'){
-				if(cptr_start[c] == '+'){
-					submit_buff[c] = ' ';
-				}else if(cptr_start[c] == '%'){
-					submit_buff[c] = ' ';
-					submit_buff[c+1] = ' ';
-					submit_buff[c+2] = ' ';
-					c+=2;
-				}else{
-					submit_buff[c] = cptr_start[c];
-				}
-				c++;
-			}
-			submit_buff[c] = '\0';
+			submit_buff[i-1] = '\0';
 			
 			chatFile = fopen(chat_file, "a");
 				
-			fprintf(chatFile, "%s>: %s\n", inet_ntoa(client->addr.sin_addr), submit_buff);
-			
-			if(!chatFile){
-				printf("Error Opening File!\n");
-				continue;
-			}
-			
-			fclose(chatFile);
-			
-			sprintf(mess_buff, "HTTP/1.0 200 OK\r\n\r\n<html><meta http-equiv =\"refresh\" content=\"0; url=/pages/chat.html\"/></html>\r\n");
-			err = send(remfd, mess_buff, strlen((char*)mess_buff), 0);
-			if(err < 0){
-				sprintf(log_buffer, "%s%s\n", log_buffer, strerror(errno));
-				free(conn_ptr);
-				continue;
-			}
-			sprintf(log_buffer, "%sRefreshing <chat.html>...", log_buffer);			
-		}else if(request.method == HEAD){
-		}else{
+			if(chatFile){
+				fprintf(chatFile, "%s>: %s\n", inet_ntoa(client->addr.sin_addr), submit_buff);
+				fclose(chatFile);
+			}	
 		}
 				
 		bzero(&mess_buff, 8192);
@@ -171,16 +147,20 @@ void* handle_client_actor(void *arg){
 		}
 		
 		free(conn_ptr);
+		free(request.body);
+		free(request.path);
 	}
 	printf("Handle Client Thread Done!\n");
 	return NULL;
 }
 
-int process_request(char* req, struct http_request* request){
-	int i, j;
+int process_request(char* req, struct http_request* request, int length){
+	int i, j, c;
 	char* cptr_start;
 	
-	//Get request metod
+	//printf("Entering process request\nGetting Method");
+	
+	//Get request method
 	if(req[0] == 'G' && req[1] == 'E' && req[2] == 'T' && req[3] == ' '){
 		request->method = GET;
 	}else if(req[0] == 'P' && req[1] == 'O' && req[2] == 'S' && req[3] == 'T' && req[4] == ' '){
@@ -193,6 +173,8 @@ int process_request(char* req, struct http_request* request){
 	
 	//Get Path
 	//determine what file they want
+	//printf("Getting Path\n");
+	
 	cptr_start = strchr(req, '/');
 	if(!cptr_start){
 		return -ENOPATH;
@@ -208,6 +190,9 @@ int process_request(char* req, struct http_request* request){
 	request->path[j] = '\0';	
 	
 	//Get Path-Params
+	/*
+	printf("Getting Path Params")
+	
 	cptr_start = strchr(req, '?');
 	if(cptr_start){
 		while(1){
@@ -218,22 +203,30 @@ int process_request(char* req, struct http_request* request){
 			}
 		}
 	}
+	*/
 	
 	//Get HTTP Version
 	//Get Headers
 	//Get Body
+	//printf("Getting Body\n");
+	
+	c = 0;
+	cptr_start = &req[4];
+	while(!(cptr_start[c-1] == '\n' && cptr_start[c-2] == '\r' && cptr_start[c-3] == '\n' && cptr_start[c-4] == '\r') && c < length){
+		c++;
+	}
+	cptr_start = &cptr_start[c];
+	
+	c = 0;
+	while(cptr_start[c] != '/0' && c < length){
+		c++;
+	}
+	
+	request->body = malloc(c+1);
+	memcpy(request->body, cptr_start, c);
+	request->body[c] = '\0';
+	
+	//printf("Leaving process request\n");
+	
 	return 0;
 }
-
-int send_all(int sock_fd, char* buffer, int n){
-	int err, sent;
-	while(sent < n){
-		err = send(sock_fd, &buffer[sent], n, 0);
-		if(err < 0){
-			return err;
-		}
-		sent += err;
-	}
-	return sent;
-}
-

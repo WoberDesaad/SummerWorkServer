@@ -59,7 +59,7 @@ void* file_actor(void* arg){
 			
 			return_data(far->return_queue, done, strlen(done)+1);
 			
-			sprintf(log_buffer, "%sSent...", log_buffer);
+			sprintf(log_buffer, "%sSent\n\0", log_buffer);
 		}
 		
 		int log_len = strlen(log_buffer);

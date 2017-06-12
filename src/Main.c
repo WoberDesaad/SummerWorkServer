@@ -78,11 +78,9 @@ int main()
  		printf("%s\n", strerror(errno));
   		return -1;
  	}
-  	printf("Listening on port %d...\n\n", PORT1);
+  	printf("Listening on port %d...\n\n#> ", PORT1);
 
-  	while(1){  
-		printf("#> ");
-	
+  	while(1){  	
 		rem_addr_len = sizeof(struct sockaddr_in);
 
   		//Select
@@ -104,7 +102,7 @@ int main()
 			break;	
   		}else{
   			if(FD_ISSET(0, &fds)){
-  				printf("Keyboard Input Detected!\n");
+  				printf("\n");
   				c = 0;
   				while ((r = getchar()) != '\n' && r != EOF) {
   					if(c == 0 && ( r == 'q' || r == 'Q' )){
@@ -130,6 +128,7 @@ int main()
 					BlockingQueue_add(Q.file_q, quit);
   					break;
 				}
+				printf("\n#> ");
   			}
   			
   			if(FD_ISSET(sockfd, &fds)){
